@@ -66,7 +66,7 @@ badris-landing/
 
 ## Live demo
 
-**https://lighthearted-panda-fe60ac.netlify.app/**
+**https://badri-carstudio.netlify.app/**
 
 > The Netlify site name above was auto-generated. It can be renamed in the Netlify dashboard (Site settings → Site details → Site name) to a cleaner slug such as `auto-detailing-showcase`. After renaming, update the `canonical`, Open Graph, Twitter, and `sitemap.xml` URLs in this repo to match.
 
