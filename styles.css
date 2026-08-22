@@ -410,6 +410,14 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 }
 .cta__contact a:hover { border-color: var(--accent); }
 
+.hidden {
+  position: absolute;
+  left: -9999px;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
 /* ---------- FOOTER ---------- */
 .footer {
   background: var(--bg-dark);

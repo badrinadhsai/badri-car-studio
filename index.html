@@ -169,7 +169,9 @@
           <li><a href="tel:+919291231424">+91-9291231424</a></li>
           <li><a href="mailto:badrinadhsaibandaru@gmail.com">badrinadhsaibandaru@gmail.com</a></li>
         </ul>
-        <form class="form reveal" data-delay="3" onsubmit="return false;">
+        <form class="form reveal" data-delay="3" name="contact" method="POST" netlify netlify-honeypot="bot-field" data-netlify="true">
+          <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
+          <input type="hidden" name="form-name" value="contact" />
           <input type="text" name="name" placeholder="Your name" aria-label="Your name" required />
           <input type="email" name="email" placeholder="Email" aria-label="Email" required />
           <input type="text" name="car" placeholder="Vehicle (make / model)" aria-label="Vehicle" />

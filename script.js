@@ -69,15 +69,29 @@
     });
   }
 
-  // ---- contact form feedback ----
+  // ---- contact form (Netlify Forms, with graceful fallback) ----
   var form = document.querySelector(".form");
   if (form) {
-    form.addEventListener("submit", function () {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
       var btn = form.querySelector("button");
-      var name = form.querySelector('input[name="name"]').value.trim();
-      btn.textContent = "Thanks" + (name ? ", " + name : "") + " — we'll be in touch";
-      btn.style.background = "var(--accent)";
-      btn.style.color = "#0e0e0f";
+      var name = (form.querySelector('input[name="name"]') || {}).value || "";
+      name = name.trim();
+      var data = new FormData(form);
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(data).toString()
+      })
+        .then(done)
+        .catch(done);
+
+      function done() {
+        btn.textContent = "Thanks" + (name ? ", " + name : "") + " — we'll be in touch";
+        btn.style.background = "var(--accent)";
+        btn.style.color = "#0e0e0f";
+        form.reset();
+      }
     });
   }
 })();
