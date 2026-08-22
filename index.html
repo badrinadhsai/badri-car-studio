@@ -162,14 +162,27 @@
     <!-- CONTACT / CTA -->
     <section class="cta" id="contact">
       <div class="cta__inner">
-        <p class="eyebrow reveal">Book a slot</p>
+        <p class="eyebrow reveal">Request a quote</p>
         <h2 class="cta__title reveal" data-delay="1">Let's make it flawless.</h2>
         <p class="cta__lede reveal" data-delay="2">Tell us about your car and we'll tailor the service. Limited slots per week to keep the standard high.</p>
+        <ul class="cta__contact reveal" data-delay="2">
+          <li><a href="tel:+15550123456">+1 (555) 012-3456</a></li>
+          <li><a href="mailto:hello@badris.studio">hello@badris.studio</a></li>
+        </ul>
         <form class="form reveal" data-delay="3" onsubmit="return false;">
           <input type="text" name="name" placeholder="Your name" aria-label="Your name" required />
           <input type="email" name="email" placeholder="Email" aria-label="Email" required />
           <input type="text" name="car" placeholder="Vehicle (make / model)" aria-label="Vehicle" />
-          <button type="submit" class="btn btn--solid btn--block">Request a booking</button>
+          <select name="service" aria-label="Service of interest">
+            <option value="" disabled selected>Service of interest</option>
+            <option>Paint correction</option>
+            <option>Ceramic coating</option>
+            <option>Paint protection film</option>
+            <option>Interior restoration</option>
+            <option>Full detail</option>
+          </select>
+          <textarea name="message" placeholder="Anything we should know?" rows="3" aria-label="Message"></textarea>
+          <button type="submit" class="btn btn--solid btn--block">Request a quote</button>
         </form>
       </div>
     </section>
@@ -184,7 +197,8 @@
     </div>
     <div class="footer__meta">
       <span>© 2026 Badris Studio</span>
-      <span>hello@badris.studio</span>
+      <a href="tel:+15550123456">+1 (555) 012-3456</a>
+      <a href="mailto:hello@badris.studio">hello@badris.studio</a>
     </div>
   </footer>
 
