@@ -319,6 +319,68 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 }
 .gallery__item:hover figcaption { transform: translateY(0); opacity: 1; }
 
+/* ---------- PRICING ---------- */
+.pricing__note { color: var(--ink-soft); font-weight: 300; margin-top: 1rem; max-width: 540px; }
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+.plan {
+  background: var(--bg);
+  padding: 2.8rem 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s var(--ease);
+}
+.plan:hover { transform: translateY(-4px); }
+.plan--featured { background: var(--bg-dark); color: var(--white); }
+.plan__tag {
+  align-self: flex-start;
+  font-size: 0.64rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0.3rem 0.7rem;
+  border-radius: 100px;
+  margin-bottom: 1.2rem;
+}
+.plan__name { font-size: 2rem; }
+.plan__sub { color: var(--ink-soft); font-size: 0.85rem; letter-spacing: 0.04em; margin-top: 0.3rem; }
+.plan--featured .plan__sub { color: rgba(247,246,243,0.6); }
+.plan__price {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.1rem;
+  color: var(--ink-soft);
+  margin: 1.4rem 0 0.4rem;
+}
+.plan__price span { font-size: 2.4rem; color: var(--ink); }
+.plan--featured .plan__price { color: rgba(247,246,243,0.6); }
+.plan--featured .plan__price span { color: var(--white); }
+.plan__list { list-style: none; margin: 1.6rem 0 2rem; display: grid; gap: 0.7rem; }
+.plan__list li {
+  font-size: 0.92rem;
+  font-weight: 300;
+  color: var(--ink-soft);
+  padding-left: 1.1rem;
+  position: relative;
+}
+.plan__list li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0.55em;
+  width: 5px; height: 5px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+.plan--featured .plan__list li { color: rgba(247,246,243,0.72); }
+.btn--plan { margin-top: auto; text-align: center; }
+.btn--outline { border: 1px solid var(--ink-soft); color: var(--ink); background: transparent; }
+.btn--outline:hover { background: var(--ink); color: var(--bg); transform: translateY(-3px); }
+
 /* ---------- PROCESS ---------- */
 .section--process {
   display: grid;
@@ -487,6 +549,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   .gallery { grid-template-columns: 1fr; }
   .gallery__item--tall,
   .gallery__item--wide { grid-row: auto; grid-column: auto; aspect-ratio: 4/3; }
+  .pricing { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {

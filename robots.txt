@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lighthearted-panda-fe60ac.netlify.app/sitemap.xml

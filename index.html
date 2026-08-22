@@ -3,12 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Badris — Automotive Detailing</title>
-  <meta name="description" content="Badris is a precision automotive detailing studio founded by Badri. Paint correction, ceramic coating and concours-level care." />
+  <title>Badris — Automotive Detailing Studio</title>
+  <meta name="description" content="Badris is a precision automotive detailing studio by Badri. Paint correction, ceramic coating and concours-level care for cars." />
+  <link rel="canonical" href="https://lighthearted-panda-fe60ac.netlify.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Badris" />
+  <meta property="og:title" content="Badris — Automotive Detailing Studio" />
+  <meta property="og:description" content="Precision car detailing by Badri — paint correction, ceramic coating and concours-level care." />
+  <meta property="og:url" content="https://lighthearted-panda-fe60ac.netlify.app/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=2000&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Badris — Automotive Detailing Studio" />
+  <meta name="twitter:description" content="Precision car detailing by Badri — paint correction, ceramic coating and concours-level care." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=2000&q=80" />
+  <meta name="theme-color" content="#0e0e0f" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Dancing+Script:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutomotiveBusiness",
+    "name": "Badris",
+    "description": "Precision automotive detailing studio offering paint correction, ceramic coating and concours-level care.",
+    "url": "https://lighthearted-panda-fe60ac.netlify.app/",
+    "telephone": "+91-9291231424",
+    "email": "badrinadhsaibandaru@gmail.com",
+    "areaServed": "India",
+    "priceRange": "₹₹"
+  }
+  </script>
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
@@ -22,6 +47,7 @@
     <nav class="nav__links" aria-label="Primary">
       <a href="#services">Services</a>
       <a href="#work">Work</a>
+      <a href="#pricing">Pricing</a>
       <a href="#process">Process</a>
       <a href="#contact" class="nav__cta">Book a slot</a>
     </nav>
@@ -127,6 +153,55 @@
           <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1600&q=80" alt="Car on display" loading="lazy" />
           <figcaption><span>Showroom Ready</span><span>Concours prep</span></figcaption>
         </figure>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section section--pricing" id="pricing">
+      <div class="section__head">
+        <p class="eyebrow reveal">Packages</p>
+        <h2 class="section__title reveal" data-delay="1">Choose the level of care.</h2>
+        <p class="pricing__note reveal" data-delay="2">Starting prices below. Every car is assessed first, so the final quote matches its condition.</p>
+      </div>
+      <div class="pricing">
+        <article class="plan reveal" data-delay="0">
+          <h3 class="plan__name">Bronze</h3>
+          <p class="plan__sub">Maintenance detail</p>
+          <p class="plan__price">From <span>₹3,499</span></p>
+          <ul class="plan__list">
+            <li>Exterior hand wash &amp; dry</li>
+            <li>Wheels, arches &amp; tyre dressing</li>
+            <li>Interior vacuum &amp; dashboard wipe-down</li>
+            <li>Glass &amp; mirrors cleaned</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline btn--plan">Request Bronze</a>
+        </article>
+        <article class="plan plan--featured reveal" data-delay="1">
+          <span class="plan__tag">Most booked</span>
+          <h3 class="plan__name">Silver</h3>
+          <p class="plan__sub">Correction &amp; protect</p>
+          <p class="plan__price">From <span>₹9,999</span></p>
+          <ul class="plan__list">
+            <li>Everything in Bronze</li>
+            <li>Single-stage paint correction</li>
+            <li>Ceramic spray sealant</li>
+            <li>Leather &amp; trim conditioning</li>
+          </ul>
+          <a href="#contact" class="btn btn--solid btn--plan">Request Silver</a>
+        </article>
+        <article class="plan reveal" data-delay="2">
+          <h3 class="plan__name">Gold</h3>
+          <p class="plan__sub">Concours detail</p>
+          <p class="plan__price">From <span>₹24,999</span></p>
+          <ul class="plan__list">
+            <li>Everything in Silver</li>
+            <li>Multi-stage paint correction</li>
+            <li>Ceramic coating (5-year grade)</li>
+            <li>Front-end paint protection film</li>
+            <li>Full interior deep clean</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline btn--plan">Request Gold</a>
+        </article>
       </div>
     </section>
 
