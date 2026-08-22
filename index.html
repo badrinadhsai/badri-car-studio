@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Badris — Automotive Detailing</title>
+  <meta name="description" content="Badris is a precision automotive detailing studio founded by Badri. Paint correction, ceramic coating and concours-level care." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Dancing+Script:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand">
+      <span class="nav__mark"></span>
+      Badris
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#contact" class="nav__cta">Book a slot</a>
+    </nav>
+    <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__media" data-parallax>
+        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=2000&q=80" alt="Detail of a glossy black car surface" loading="eager" />
+        <div class="hero__scrim"></div>
+      </div>
+      <div class="hero__content">
+        <p class="eyebrow reveal" data-delay="0">Automotive detailing studio · by Badri</p>
+        <h1 class="hero__title">
+          <span class="line"><span class="reveal" data-delay="1">Flawless</span></span>
+          <span class="line"><span class="reveal" data-delay="2">by design.</span></span>
+        </h1>
+        <p class="hero__lede reveal" data-delay="3">
+          We restore paint to its truest state — correction, coating and
+          concours-level care, handled with obsessive precision.
+        </p>
+        <div class="hero__actions reveal" data-delay="4">
+          <a href="#contact" class="btn btn--solid">Book a slot</a>
+          <a href="#work" class="btn btn--ghost">See the work</a>
+        </div>
+      </div>
+      <div class="hero__scroll reveal" data-delay="5">
+        <span>Scroll</span>
+        <span class="hero__scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Paint correction</span><span class="dot">•</span>
+        <span>Ceramic coating</span><span class="dot">•</span>
+        <span>Interior restoration</span><span class="dot">•</span>
+        <span>PPF</span><span class="dot">•</span>
+        <span>Concours prep</span><span class="dot">•</span>
+        <span>Paint correction</span><span class="dot">•</span>
+        <span>Ceramic coating</span><span class="dot">•</span>
+        <span>Interior restoration</span><span class="dot">•</span>
+        <span>PPF</span><span class="dot">•</span>
+        <span>Concours prep</span><span class="dot">•</span>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="section__head">
+        <p class="eyebrow reveal">What we do</p>
+        <h2 class="section__title reveal" data-delay="1">Services built around the paint, not the package.</h2>
+      </div>
+      <div class="cards">
+        <article class="card reveal" data-delay="0">
+          <span class="card__num">01</span>
+          <h3>Paint Correction</h3>
+          <p>Multi-stage machine polishing that removes swirls, holograms and defects to a mirror finish.</p>
+        </article>
+        <article class="card reveal" data-delay="1">
+          <span class="card__num">02</span>
+          <h3>Ceramic Coating</h3>
+          <p>Nano-ceramic layers that lock in gloss and shield against the elements for years.</p>
+        </article>
+        <article class="card reveal" data-delay="2">
+          <span class="card__num">03</span>
+          <h3>Paint Protection Film</h3>
+          <p>Self-healing, nearly invisible film that defends against rock chips and road rash.</p>
+        </article>
+        <article class="card reveal" data-delay="3">
+          <span class="card__num">04</span>
+          <h3>Interior Restoration</h3>
+          <p>Deep cleaning, leather rejuvenation and textile protection done by hand.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- WORK / GALLERY -->
+    <section class="section section--work" id="work">
+      <div class="section__head">
+        <p class="eyebrow reveal">Recent work</p>
+        <h2 class="section__title reveal" data-delay="1">Cars we've brought back to life.</h2>
+      </div>
+      <div class="gallery">
+        <figure class="gallery__item gallery__item--tall reveal">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80" alt="Black sports car" loading="lazy" />
+          <figcaption><span>GT Restoration</span><span>Paint + Coating</span></figcaption>
+        </figure>
+        <figure class="gallery__item reveal" data-delay="1">
+          <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80" alt="Yellow sports car detail" loading="lazy" />
+          <figcaption><span>Track Edition</span><span>Correction</span></figcaption>
+        </figure>
+        <figure class="gallery__item reveal" data-delay="2">
+          <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=80" alt="Classic car surface" loading="lazy" />
+          <figcaption><span>Classic Revival</span><span>Full detail</span></figcaption>
+        </figure>
+        <figure class="gallery__item gallery__item--wide reveal" data-delay="3">
+          <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1600&q=80" alt="Car on display" loading="lazy" />
+          <figcaption><span>Showroom Ready</span><span>Concours prep</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section section--process" id="process">
+      <div class="process__media reveal">
+        <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=1400&q=80" alt="Detailer working on a vehicle" loading="lazy" />
+      </div>
+      <div class="process__text">
+        <p class="eyebrow reveal">The process</p>
+        <h2 class="section__title reveal" data-delay="1">Measured. Meticulous. Repeatable.</h2>
+        <ol class="steps">
+          <li class="step reveal" data-delay="1">
+            <span class="step__no">i</span>
+            <div><h4>Assessment</h4><p>Paint depth, defects and goals mapped before a single pad touches the surface.</p></div>
+          </li>
+          <li class="step reveal" data-delay="2">
+            <span class="step__no">ii</span>
+            <div><h4>Decontamination</h4><p>Wash, clay and iron removal leave a perfectly clean foundation.</p></div>
+          </li>
+          <li class="step reveal" data-delay="3">
+            <span class="step__no">iii</span>
+            <div><h4>Correction &amp; Protection</h4><p>Stage-by-stage polishing, then sealed with coating or film.</p></div>
+          </li>
+          <li class="step reveal" data-delay="4">
+            <span class="step__no">iv</span>
+            <div><h4>Final Inspection</h4><p>Reviewed under raking light — because the details are the point.</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTACT / CTA -->
+    <section class="cta" id="contact">
+      <div class="cta__inner">
+        <p class="eyebrow reveal">Book a slot</p>
+        <h2 class="cta__title reveal" data-delay="1">Let's make it flawless.</h2>
+        <p class="cta__lede reveal" data-delay="2">Tell us about your car and we'll tailor the service. Limited slots per week to keep the standard high.</p>
+        <form class="form reveal" data-delay="3" onsubmit="return false;">
+          <input type="text" name="name" placeholder="Your name" aria-label="Your name" required />
+          <input type="email" name="email" placeholder="Email" aria-label="Email" required />
+          <input type="text" name="car" placeholder="Vehicle (make / model)" aria-label="Vehicle" />
+          <button type="submit" class="btn btn--solid btn--block">Request a booking</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">Badris</div>
+    <p class="footer__note">Precision automotive detailing. By appointment only.</p>
+    <div class="footer__founder">
+      <span class="footer__founder-label">Founded &amp; detailed by</span>
+      <span class="footer__signature">Badri</span>
+    </div>
+    <div class="footer__meta">
+      <span>© 2026 Badris Studio</span>
+      <span>hello@badris.studio</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
