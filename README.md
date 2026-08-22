@@ -1,4 +1,4 @@
-# Badris — Automotive Detailing Landing Page
+# Badri Car Studio — Automotive Web Showcase
 
 A responsive, single-page automotive detailing website built as a **frontend web development demo project**. It demonstrates semantic HTML, modern CSS, vanilla JavaScript interactions, a production deployment pipeline, and a working contact form — all without a framework or backend.
 
@@ -54,7 +54,7 @@ Netlify builds the site directly from the GitHub repository on every push. The c
 ## Project structure
 
 ```
-badris-landing/
+badri-car-studio/
 ├── index.html        # Markup, SEO/OG/Twitter/JSON-LD metadata, favicon
 ├── styles.css        # All styling, responsive breakpoints, animations, a11y focus
 ├── script.js         # Scroll reveals, parallax, mobile nav, form submission
