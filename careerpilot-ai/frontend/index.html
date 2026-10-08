@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('cp-theme');
+          if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+          document.documentElement.dataset.theme = t;
+        } catch (e) { document.documentElement.dataset.theme = 'dark'; }
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07090d" />
+    <title>CareerPilot AI — Turn your skills into a career roadmap</title>
+    <meta name="description" content="CareerPilot AI analyzes your resume, matches your profile with target jobs, identifies skill gaps and creates a personalized plan to help you become job-ready." />
+    <link rel="canonical" href="http://localhost:5173/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CareerPilot AI — AI Career Intelligence for Students" />
+    <meta property="og:description" content="Resume analysis, job matching, skill gaps, roadmap and AI interview coach — powered by generative AI." />
+    <meta property="og:url" content="http://localhost:5173/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CareerPilot AI" />
+    <meta name="twitter:description" content="Turn your skills into a career roadmap." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
