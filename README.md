@@ -94,4 +94,4 @@ Ideas that could extend the project (not yet implemented):
 
 ## License
 
-MIT — free to view, fork, and learn from.
+MIT — free to view, Work, and learn from.
